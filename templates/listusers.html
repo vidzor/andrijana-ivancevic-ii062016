@@ -1,0 +1,27 @@
+
+{% if users|length %}
+    <table class="table listUsersTable">
+        <thead>
+            <tr>
+                <th  scope="col"> Name </th>
+                <th  scope="col"> Age </th>
+                <th  scope="col"> Height </th>
+                <th  scope="col"> Created </th>
+                <th  scope="col">  </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+                <tr>
+                    <td> {{ user.name }} </td>
+                    <td> {{ user.age }} </td>
+                    <td> {{ user.height }} </td>
+                    <td> {{ user.get_creation_datetime_str() }} </td>
+                    <td class="td-with-xbtn"> <button user-id="{{ user.id }}" class="remove-user-btn" > X </button> </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <div class="alert alert-dark" role="alert"> No users </div>
+{% endif %}

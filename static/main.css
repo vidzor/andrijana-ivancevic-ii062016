@@ -1,0 +1,33 @@
+
+div.listUsersDiv {
+    width: 800px;
+    height: auto;
+    background-color: #EBEBEB;
+    margin: 10px auto 0 auto;
+    padding: 10px;
+    border-radius: 3px
+}
+
+div.searchUsersDiv {
+    width: 800px;
+    height: auto;
+    background-color: #EBEBEB;
+    margin: 10px auto 0 auto;
+    padding: 10px;
+    border-radius: 3px
+}
+
+table.listUsersTable {
+    margin: 0 auto 10px auto;
+    background-color: #FFFFFF;
+    border-radius: 3px
+}
+
+div.addUserDiv {
+    width: 800px;
+    height: auto;
+    background-color: #EBEBEB;
+    margin: 10px auto 0 auto;
+    padding: 10px;
+    border-radius: 3px
+}
